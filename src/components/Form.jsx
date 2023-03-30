@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { setDtList, setFormDt } from "../nameSlice";
+import { setDtList, setFormDt } from "./nameSlice";
 
 export const Form = () => {
   const dispatch = useDispatch();
@@ -12,7 +12,6 @@ export const Form = () => {
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
-
     dispatch(setDtList());
   };
   return (

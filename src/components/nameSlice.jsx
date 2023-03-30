@@ -6,14 +6,13 @@ const initialState = {
 };
 
 const nameSlice = createSlice({
-  name: "userName",
-  // initialState=initialState
+  name: "dataName",
   initialState,
-
   reducers: {
     setFormDt: (state, action) => {
       state.formDt = action.payload;
     },
+
     setDtList: (state, action) => {
       state.dtList = [...state.dtList, state.formDt];
     },
