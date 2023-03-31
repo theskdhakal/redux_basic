@@ -1,7 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { setDtList, setFormDt } from "./nameSlice";
-
+import { setFormDt } from "../dataSlice";
 export const Form = () => {
   const dispatch = useDispatch();
 
